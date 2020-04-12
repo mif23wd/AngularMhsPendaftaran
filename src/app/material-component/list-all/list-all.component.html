@@ -1,0 +1,39 @@
+ <mat-card>
+    <mat-card-content>  
+    <mat-card-title>List Pending</mat-card-title>
+    <mat-chip-list>
+        <br>
+        <br>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th rowspan="2">Nama</th>
+                    <th rowspan="2">No. KTP</th>
+                    <th rowspan="2">Email</th>
+                    <th colspan="3" align="center">Nilai</th>  
+                    <th colspan="2" rowspan="2" align="center">Option</th>  
+                </tr>
+                <tr>
+                   <th>Mat</th>
+                   <th>B.Indo</th>
+                   <th>Fis</th> 
+                </tr>         
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of mhsData">
+                    <td>{{data.namaMhs}}</td>
+                    <td>{{data.noKtpMhs}}</td>
+                    <td>{{data.emailMhs}}</td>
+                    <td>{{data.nilaiMatematika}}</td>
+                    <td>{{data.nilaiBindo}}</td>
+                    <td>{{data.nilaiFisika}}</td>
+                    <td align="center"><button pButton type="button" label="Accept" class="ui-button-raised" (click)="acc(data)"></button></td>
+                    <td align="center"><button pButton type="button" label="Reject" class="ui-button-raised ui-button-danger" (click)="rej(data)"></button></td>
+                </tr>        
+            </tbody>
+        </table>
+      
+    </mat-chip-list>
+
+    </mat-card-content>
+  </mat-card>

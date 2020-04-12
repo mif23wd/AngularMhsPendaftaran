@@ -1,0 +1,92 @@
+<link rel="stylesheet" type="text/css" href="/node_modules/primeicons/primeicons.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/themes/nova-light/theme.css" />
+<link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<div class="header" Arial Black>
+  <p style="font-size: 30px; color: whitesmoke;" >Form Pendaftaran</p>
+  
+</div>
+<br>
+<hr>
+<br>
+<p style="text-align: center;font-size: 30px; color: rgb(11, 10, 102);font-family: 'Courier New', Courier, monospace; "><b>Isi form dibawah ini</b></p>
+<div class="container p-3 my-3 border" >
+  <br>
+<span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.namaMhs" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Nama Lengkap </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.noKtpMhs" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">No. KTP  </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.emailMhs" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Email </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.alamatMhs" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Alamat </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.namaAsalSekolah" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Asal Sekolah </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.alamatAsalSekolah" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Alamat Sekolah </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.namaOrtu" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">Nama Orang Tua/ Wali </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.noKtpOrtu" id="float-input" type="text" size="30" pInputText > 
+    <label for="float-input">No. KTP Orang Tua/ Wali </label> &nbsp;   
+  </span>
+  <br> 
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.nilaiBindo" id="float-input" type="number" size="30" pInputText > 
+    <label for="float-input">Nilai Bahasa Indonesia </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.nilaiMatematika" id="float-input" type="number" size="30" pInputText > 
+    <label for="float-input">Nilai Matematika </label> &nbsp;   
+  </span>
+  <br>
+  <span class="ui-float-label" id="back"> 
+ 
+    <input [(ngModel)]="mhs1.nilaiFisika" id="float-input" type="number" size="30" pInputText > 
+    <label for="float-input">Nilai Fisika </label> &nbsp;   
+  </span>
+  <br>
+                 
+<ul>
+  <button (click) = "daftarMhs()"  _ngcontent-vks-c3="" class="ui-button-rounded ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" label="Primary" pbutton="" type="reset" >
+    <span class="ui-button-text ui-clickable">Daftar</span></button>
+</ul> 
+<br>
+<hr>
+
+<div class="footer">
+  <p style="text-align: center;">@Copyright 2020 - I KADEK ARYA YOGIMIYAANTARA</p>
+</div>
